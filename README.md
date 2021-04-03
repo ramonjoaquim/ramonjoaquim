@@ -36,7 +36,7 @@ class About extends Me
     
     public function getPersonalProjectAddress(): string
     {
-        return "<a href="https://nomasys.com.br/">Click here</a>";
+        return 'https://nomasys.com.br';
     }
 }
 ```
