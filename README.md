@@ -18,11 +18,11 @@ class About extends Me
     public function getDailyKnowledge(): array
     {
         return [
-            JAVA::class,
+            Java::class,
             AngularJS::class,
             Kubernetes::class,
             Javascript::class,
-            PHP::class,
+            Php::class,
             Laravel::class,
             Aws::class,
         ];
