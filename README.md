@@ -22,6 +22,7 @@ class About extends Me
             AngularJS::class,
             Kubernetes::class,
             Javascript::class,
+            MongoDB::class,
             Php::class,
             Laravel::class,
             Aws::class,
