@@ -25,6 +25,7 @@ class About extends Me
             Php::class,
             Laravel::class,
             Aws::class,
+            GitLab::class,
         ];
     }
 
