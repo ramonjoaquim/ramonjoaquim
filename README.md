@@ -26,13 +26,16 @@ class About extends Me
             Php::class,
             Laravel::class,
             Aws::class,
-            GitLab::class,
+            GitLab::class
         ];
     }
 
-    public function getFutureGoal(): string
+    public function getFutureGoal(): array
     {
-        return 'More knowledge and contribuite in openSource projects';
+        return [
+            Flutter::class,
+            NestJS::class,
+        ];
     }
     
     public function getPersonalProjectAddress(): string
