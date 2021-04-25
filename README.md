@@ -35,6 +35,7 @@ class About extends Me
         return [
             Flutter::class,
             NestJS::class,
+            React::class,
         ];
     }
     
