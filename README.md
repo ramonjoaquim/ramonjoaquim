@@ -45,6 +45,6 @@ class About extends Me
             Electron::class
         ];
     }
-   ...
+   
 }
 ```
