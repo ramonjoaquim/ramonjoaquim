@@ -42,6 +42,7 @@ class About extends Me
             Flutter::class,
             NestJS::class,
             React::class,
+            Electron::class
         ];
     }
     
