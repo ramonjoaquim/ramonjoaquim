@@ -45,10 +45,6 @@ class About extends Me
             Electron::class
         ];
     }
-    
-    public function getPersonalProjectAddress(): string
-    {
-        return 'https://nomasys.com.br';
-    }
+   ...
 }
 ```
