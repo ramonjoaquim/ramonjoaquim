@@ -30,7 +30,7 @@ class About extends Me
             Javascript::class,
             MongoDB::class,
             Php::class,
-            Laravel::class,
+            Lumen::class,
             Aws::class,
             GitLab::class
         ];
