@@ -29,8 +29,8 @@ class About extends Me
             Kubernetes::class,
             Javascript::class,
             MongoDB::class,
-            Php::class,
-            Lumen::class,
+            React::class,
+            NestJS::class,
             Aws::class,
             GitLab::class
         ];
@@ -40,8 +40,6 @@ class About extends Me
     {
         return [
             Flutter::class,
-            NestJS::class,
-            React::class,
             Electron::class
         ];
     }
