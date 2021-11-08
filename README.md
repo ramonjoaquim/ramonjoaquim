@@ -32,15 +32,16 @@ class About extends Me
             React::class,
             NestJS::class,
             Aws::class,
-            GitLab::class
+            GitLab::class,
+            Flutter::class,
         ];
     }
 
     public function getFutureGoal(): array
     {
         return [
-            Flutter::class,
-            Electron::class
+            Electron::class,
+            SpringPatterns::class
         ];
     }
    
