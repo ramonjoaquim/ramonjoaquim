@@ -1,48 +1,49 @@
-```php
-<?php
+package main
 
-namespace RamonJoaquim;
+import "fmt"
 
-class About extends Me
-{
-    public function getBio(): string 
-    {
-        return 'Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, 
-        API development and also functional and automated tests.';
-    }
-    
-    public function getCurrentWorkplace(): array
-    {
-        return [
-            'workplace' => [
-                'company' => 'Betha Sistemas',
-                'position' => 'Full-Stack developer' 
-            ]
-        ];
-    }
-
-    public function getDailyKnowledge(): array
-    {
-        return [
-            Java::class,
-            AngularJS::class,
-            Kubernetes::class,
-            Javascript::class,
-            MongoDB::class,
-            NestJS::class,
-            Aws::class,
-            GitLab::class,
-            Flutter::class            
-        ];
-    }
-
-    public function getFutureGoal(): array
-    {
-        return [
-            Go::class,
-            SpringPatterns::class
-        ];
-    }
-   
+type Workplace struct {
+	company  string
+	position string
 }
-```
+
+func main() {
+	fmt.Println("Bio:", getBio())
+	fmt.Println("Current WorkPlace:", getCurrentWorkplace())
+	fmt.Println("Daily Knowledge:", getDailyKnowledge())
+	fmt.Println("Future Goal:", getFutureGoal())
+}
+
+func getBio() string {
+	return "Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, API development and also functional and automated tests."
+}
+
+func getDailyKnowledge() []string {
+	return []string{
+		"Java",
+		"AngularJS",
+		"Kubernetes",
+		"Javascript",
+		"MongoDB",
+		"NestJS",
+		"AWS",
+		"GitLab",
+		"Flutter",
+	}
+}
+
+func getFutureGoal() []string {
+	return []string{
+		"Go",
+		"SpringPatterns",
+		"GraphQL",
+	}
+}
+
+func getCurrentWorkplace() (currentWorkPlace Workplace) {
+	currentWorkPlace = Workplace{
+		company:  "Betha Sistemas",
+		position: "Full-Stack developer",
+	}
+	return
+}
