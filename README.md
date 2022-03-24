@@ -16,7 +16,8 @@ func main() {
 }
 
 func getBio() string {
-	return "Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, API development and also functional and automated tests."
+	return `Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, 
+	API development and also functional and automated tests.`
 }
 
 func getDailyKnowledge() []string {
