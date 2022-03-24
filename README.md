@@ -39,7 +39,7 @@ class About extends Me
     public function getFutureGoal(): array
     {
         return [
-            GO::class,
+            Go::class,
             SpringPatterns::class
         ];
     }
