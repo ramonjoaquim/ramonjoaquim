@@ -29,18 +29,17 @@ class About extends Me
             Kubernetes::class,
             Javascript::class,
             MongoDB::class,
-            React::class,
             NestJS::class,
             Aws::class,
             GitLab::class,
-            Flutter::class,
+            Flutter::class            
         ];
     }
 
     public function getFutureGoal(): array
     {
         return [
-            Electron::class,
+            GO::class,
             SpringPatterns::class
         ];
     }
