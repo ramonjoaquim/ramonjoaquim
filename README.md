@@ -31,6 +31,7 @@ func getDailyKnowledge() []string {
 		"AWS",
 		"GitLab",
 		"Flutter",
+		"React"
 	}
 }
 
