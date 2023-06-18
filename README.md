@@ -1,52 +1,51 @@
-```go
-package main
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Bio: " + getBio());
+        System.out.println("Current Workplace: " + getCurrentWorkplace());
+        System.out.println("Daily Knowledge: " + Arrays.toString(getDailyKnowledge()));
+        System.out.println("Future Goal: " + getFutureGoal());
+    }
 
-import "fmt"
+    public static String getBio() {
+        return "Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, " +
+                "API development and also functional and automated tests.";
+    }
 
-type Workplace struct {
-	company  string
-	position string
+    public static String[] getDailyKnowledge() {
+        return new String[]{
+                "Java",
+                "Angular",
+                "Kubernetes",
+                "Javascript",
+                "MongoDB",
+                "NestJS",
+                "AWS",
+                "GitLab",
+                "React"
+        };
+    }
+
+    public static Workplace getCurrentWorkplace() {
+        return new Workplace("Betha Sistemas", "Full-Stack developer");
+    }
+
+    public static String getFutureGoal() {
+        return "To be a Java expert";
+    }
 }
 
-func main() {
-	fmt.Println("Bio:", getBio())
-	fmt.Println("Current WorkPlace:", getCurrentWorkplace())
-	fmt.Println("Daily Knowledge:", getDailyKnowledge())
-	fmt.Println("Future Goal:", getFutureGoal())
+class Workplace {
+    private final String company;
+    private final String position;
+
+    public Workplace(String company, String position) {
+        this.company = company;
+        this.position = position;
+    }
+
+    public String toString() {
+        return company + " - " + position;
+    }
 }
 
-func getBio() string {
-	return `Bachelor in Information System, Full Stack Developer with knowledge about DevOps culture, 
-	API development and also functional and automated tests.`
-}
-
-func getDailyKnowledge() []string {
-	return []string{
-		"Java",
-		"AngularJS",
-		"Kubernetes",
-		"Javascript",
-		"MongoDB",
-		"NestJS",
-		"AWS",
-		"GitLab",
-		"Flutter",
-		"React"
-	}
-}
-
-func getFutureGoal() []string {
-	return []string{
-		"Go",
-		"SpringPatterns",
-		"GraphQL",
-	}
-}
-
-func getCurrentWorkplace() (currentWorkPlace Workplace) {
-	currentWorkPlace = Workplace{
-		company:  "Betha Sistemas",
-		position: "Full-Stack developer",
-	}
-	return
-}
